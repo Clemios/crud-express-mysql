@@ -1,0 +1,22 @@
+<% include head %>
+<% include navbar %>
+
+<div class="container index-container">
+  <h1>Welcome to Express and Bootstrap</h1>
+  <p class="lead">Réalisé pendant le cours de NodeJS</p>
+    <% if(message){ %>
+  <div class="card" style="width: 20rem;">
+    <div class="card-header">
+      Last Message
+    </div>
+    <div class="card-body">
+      <h4 class="card-title"><%= name %></h4>
+      <h6 class="card-subtitle mb-2 text-muted"><%= email %></h6>
+      <p class="card-text"><%= message %></p>
+    </div>
+     <%  } %>
+  </div>
+</div>
+
+<% include footer %>
+

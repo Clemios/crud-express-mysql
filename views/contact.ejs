@@ -1,0 +1,32 @@
+<% include head %>
+<% include navbar %>
+
+<div class="container">
+
+  <div class="card">
+    <div class="card-body">
+    <form method="post">
+      <div class="form-group">
+        <label for="exampleInputObject1">Objet</label>
+        <input type="object" name="userObject" class="form-control" id="exampleInputObject1" placeholder="Objet....">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" name="userEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email....">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName1">Name</label>
+        <input type="name" name="userName" class="form-control" id="exampleInputName1" placeholder="Name....">
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control" name="userMessage" id="exampleFormControlTextarea1" rows="3" placeholder="Message...."></textarea>
+    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+</div>
+<% include footer %>

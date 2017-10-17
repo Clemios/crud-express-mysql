@@ -1,0 +1,29 @@
+<% include head %>
+<% include navbar %>
+
+<div class="container message-container">
+  <div class="card">
+  <form action="delete/<%= message.id %>" method="post">
+    <div class="card-header">
+      Message <%= message.id %>
+      <button type="submit" class="close" aria-label="Close">
+      <span class="oi oi-trash"></span>
+      </button>
+    </div>
+    </form>
+    <form action="edit/<%= message.id %>" method="post">
+    <div class="card-body">
+        <h4 class="card-title">Objet: <%= message.contact_object %></h4>
+        <h6 class="card-subtitle mb-2 text-muted"><%= message.contact_email %></h6>
+        <h6 class="card-subtitle mb-2 text-muted"><%= message.contact_name %></h6>
+        <span>Message :</span><textarea name="userMessage" class="form-control" id="exampleInputMessage1" placeholder="Enter message" ><%= message.contact_message %></textarea>
+    </div>
+    <div class="card-body">
+      <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </div>
+    </form>
+  </div>
+</div>
+
+<% include footer %>
+
