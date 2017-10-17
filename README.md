@@ -21,6 +21,7 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 Dans le repertoire du projet :
 
 * Installation des packages npm (depuis package.json) :
+
 ```
 npm install
 ```
@@ -32,7 +33,30 @@ npm install
 Dans le repertoire du projet :
 
 * Démarrer le projet :
+
 ```
 node /bin/www
 ```
 
+* Avec pm2 des scripts personalisés sont disponibles (cf package.json) :
+
+Installer pm2 :
+
+```
+npm install pm2 -g
+```
+
+Demarrer/redemarrer le projet :
+
+```
+npm start
+```
+```
+npm restart
+```
+
+Kill le projet :
+
+```
+npm stop
+```
