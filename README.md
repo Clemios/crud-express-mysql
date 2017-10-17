@@ -7,9 +7,14 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 * `NodeJS` avec `Express`
 * `MySQL`
 
-## Frameworks/Librairies
+## Librairies
 
 * `Bootstrap`
+* `Iconic`
 
-# Quick Start Guige
+# Quick Install Guide
+
+## Installation de l'environement, des librairies
+
+## Configuration de la base MySQL
 
