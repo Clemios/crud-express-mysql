@@ -4,7 +4,7 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 
 ## Environement
 
-* `NodeJS` avec `npm`
+* `NodeJS` avec `Express`
 * `MySQL`
 
 ## Frameworks/Librairies
