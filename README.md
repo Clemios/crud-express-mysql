@@ -20,9 +20,12 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 
 # Quick Launch Guide
 
-Récupérer le projet puis faite un
-```shell
+Installation des packages npm (depuis package.json) :
+```
 npm install
 ```
-
+Démarrer le projet :
+```
+node /bin/www
+```
 
