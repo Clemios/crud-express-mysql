@@ -21,7 +21,7 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 # Quick Launch Guide
 
 Récupérer le projet puis faite un
-```bash
+```js
 npm install
 ```
 
