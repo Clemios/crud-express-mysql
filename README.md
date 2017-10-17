@@ -16,15 +16,22 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 
 ## Installation de l'environement, des librairies
 
+[Installer NodeJS](https://nodejs.org)
+
+Dans le repertoire du projet :
+
+* Installation des packages npm (depuis package.json) :
+```
+npm install
+```
+
 ## Configuration de la base MySQL
 
 # Quick Launch Guide
 
-Installation des packages npm (depuis package.json) :
-```
-npm install
-```
-Démarrer le projet :
+Dans le repertoire du projet :
+
+* Démarrer le projet :
 ```
 node /bin/www
 ```
