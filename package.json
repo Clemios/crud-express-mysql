@@ -1,9 +1,11 @@
 {
   "name": "myfirstapp",
   "version": "0.0.0",
+  "author":"Clément Fleury",
   "private": true,
   "scripts": {
-    "start": "pm2 start --watch ~/Desktop/Ingesup/NodeJS/ExpressTesr/myfirstapp bin/www"
+    "pm2start": "pm2 start --watch ~/Desktop/Ingesup/NodeJS/ExpressTesr/myfirstapp bin/www",
+    "start": "node bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -12,6 +14,7 @@
     "ejs": "~2.5.7",
     "express": "~4.15.5",
     "morgan": "~1.9.0",
+    "mysql":"~2.15.0",
     "serve-favicon": "~2.4.5"
   }
 }
