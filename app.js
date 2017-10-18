@@ -11,6 +11,7 @@ var homePage = require('./containers/homePage');
 var messageCreator = require('./containers/messageCreator');
 var messageList = require('./containers/messageList');
 
+
 var app = express();
 
 // view engine setup
@@ -28,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Routes /!\ Des sous-routes sont gérées dans chaque module /!\
-/// Publics routes
 //// Index
 app.use('/', homePage);
 
@@ -36,6 +36,7 @@ app.use('/', homePage);
 app.use('/messages', messageList);
 app.use('/contact', messageCreator);
 
+// TODO extraire le getMessage vers un nouveau container messageDetail
 app.use('/message', message);
 
 
