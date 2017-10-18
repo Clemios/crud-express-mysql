@@ -3,7 +3,7 @@ var router = express.Router();
 var pool = require('../mySQLconector');
 
 /* GET messages listing. */
-router.get('', function(req, res, next) {
+router.get('/', function(req, res, next) {
   var sql = "SELECT * FROM contact"
   pool.query(sql, function (err, messages) {
     if (err) throw err;

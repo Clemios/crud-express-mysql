@@ -25,9 +25,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// Routes /!\ Des sous-routes sont gérées dans chaque module /!\
+//// Index
 app.use('/', index);
 
+//// Listing des messages
 app.use('/messages', messages);
+//// Afficher un message
 app.use('/message', message);
 
 app.use('/contact', contact);

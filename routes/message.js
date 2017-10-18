@@ -15,6 +15,20 @@ router.get('/:id', function(req, res, next) {
   })
 });
 
+router.post('/add', function (req, res) {
+  var userEmail = req.body.userEmail;
+  var userName = req.body.userName;
+  var userMessage = req.body.userMessage;
+  var userObject = req.body.userObject;
+  var values = [[userName,userEmail,userMessage,userObject]];
+  var sql = "INSERT INTO contact (contact_name,contact_email,contact_message,contact_object) VALUES ?"
+  pool.query(sql , [values], function (err, result) {
+    if (err) throw err;
+    console.log("Result: " + result);
+  })
+  res.redirect('/messages');
+});
+
 router.post('/edit/:id', function (req, res) {
   var params = req.params;
   var userMessage = req.body.userMessage;
