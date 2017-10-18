@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   pool.query(sql, function (err, messages) {
     if (err) throw err;
     console.log("Result: " + messages);
-    res.render('messages', { title: 'Messages', messages: messages });
+    res.render('messages', { title: 'Liste des messages', messages: messages });
   })
 });
 

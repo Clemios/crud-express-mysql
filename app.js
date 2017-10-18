@@ -5,10 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var messages = require('./routes/messages');
 var message = require('./routes/message');
-var contact = require('./routes/contact');
+
+var homePage = require('./containers/homePage');
+var messageCreator = require('./containers/messageCreator');
+var messageList = require('./containers/messageList');
 
 var app = express();
 
@@ -27,15 +28,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Routes /!\ Des sous-routes sont gérées dans chaque module /!\
+/// Publics routes
 //// Index
-app.use('/', index);
+app.use('/', homePage);
 
 //// Listing des messages
-app.use('/messages', messages);
-//// Afficher un message
+app.use('/messages', messageList);
+app.use('/contact', messageCreator);
+
 app.use('/message', message);
 
-app.use('/contact', contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
