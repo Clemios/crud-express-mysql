@@ -4,13 +4,13 @@ Projet réalisé dans le cadre du cour de NodeJS, c'est un CRUD NodeJS/Express a
 
 ## Environement
 
-* `NodeJS` avec `Express`
-* `MySQL`
+* [NodeJS](https://nodejs.org) avec [Express](http://expressjs.com/)
+* [MySQL](https://dev.mysql.com/downloads/mysql/)
 
 ## Librairies
 
-* `Bootstrap`
-* `Iconic`
+* [Bootstrap](http://getbootstrap.com/) CSS & Jquery
+* [OpenIconic](https://useiconic.com/open) SVG Icons
 
 # Quick Install Guide
 
