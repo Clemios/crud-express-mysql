@@ -9,6 +9,4 @@ var pool  = mysql.createPool({
     database        : 'nodejs'
   });
 
-  console.log('mySQLconector')
-
 module.exports = pool;

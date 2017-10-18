@@ -4,8 +4,9 @@
   "author":"Clément Fleury",
   "private": true,
   "scripts": {
-    "pm2start": "pm2 start --watch ~/Desktop/Ingesup/NodeJS/ExpressTesr/myfirstapp bin/www",
-    "start": "node bin/www"
+    "start": "pm2 start --watch ~/Desktop/Ingesup/NodeJS/ExpressTesr/myfirstapp bin/www",
+    "restart": "pm2 restart --watch ~/Desktop/Ingesup/NodeJS/ExpressTesr/myfirstapp bin/www",
+    "stop": "pm2 delete www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
