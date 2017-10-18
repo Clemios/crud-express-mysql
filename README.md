@@ -38,7 +38,7 @@ Dans le repertoire du projet :
 node /bin/www
 ```
 
-* Avec pm2 des scripts personalisés sont disponibles (cf package.json) :
+* Avec [pm2](http://pm2.keymetrics.io/) des scripts personalisés sont disponibles (cf package.json) :
 
 Installer pm2 :
 
