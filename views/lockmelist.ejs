@@ -1,0 +1,38 @@
+<% include head %>
+<% include navbar %>
+
+<div class="container messages-container">
+     <table id="example" class="table table-striped table-messages" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Type</th>
+                <th>Time</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% events.forEach(function (event) { %>
+                <tr>
+                    <td><%= event.id %></td>
+                    <td><%= event.type %></td>
+                    <td><%= event.time %></td>
+                    <td><%= event.com_sigfox_SigFoxData.data %></td>
+                    <td>
+                    <div class="btn-group" role="group" aria-label="actions">
+                    <form action="" method="post">
+                        <a class="btn-link" role="button" href=""><span class="oi oi-eye"></span></a>
+                        <button class="btn-link" type="submit" aria-label="Delete">
+                        <span class="oi oi-trash"></span>
+                        </button>
+                        </form>
+                    </div>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include footer %>
+
